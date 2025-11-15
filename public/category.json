@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "category": "Europe Tour"
+    },
+    {
+        "id": 2,
+        "category": "Asia Tour"
+    },
+    {
+        "id": 3,
+        "category": "Luxury Tour"
+    },
+    {
+        "id": 4,
+        "category": "Adventure Tour"
+    },
+    {
+        "id": 5,
+        "category": "Beach Tour"
+    }
+]
