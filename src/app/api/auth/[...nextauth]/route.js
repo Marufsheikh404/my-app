@@ -2,14 +2,13 @@
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 
-const options = {
+export const authOptions = {
     providers: [
         CredentialsProvider({
             name: "Credentials",
             credentials: {
-                username: { label: "Username", type: "text", placeholder: "maruf" },
-                password: { label: "Password", type: "password" },
-                email: { label: "Email", type: "password" }
+                username: { label: "Username", type: "text", placeholder: "your name" },
+                password: { label: "Password", type: "password" }
             },
             async authorize(credentials) {
                 // Example: verify credentials directly here (recommended)
@@ -27,6 +26,6 @@ const options = {
     // callbacks, session, pages ইত্যাদি লাগলে এখানে যোগ করো
 };
 
-const handler = NextAuth(options);
+const handler = NextAuth(authOptions);
 // IMPORTANT: named exports for App Router HTTP methods
 export { handler as GET, handler as POST };
